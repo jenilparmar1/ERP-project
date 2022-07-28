@@ -1,0 +1,169 @@
+body{
+    background-image: url(/images/desk_office_chair_design_meeting_80711_1920x1080.jpg);
+    background: fixed cover no-repeat center;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    border: 1px black solid;
+    width: 450px;
+    height: 650px;
+    margin-top: 170px;
+    margin-right: 45px;
+    float: right;
+}
+
+.logo{
+    font-family: 'Overpass', sans-serif;
+    font-family: 'PT sans', sans-serif;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    width: fit-content;
+    margin-left: 190px;
+    border-radius: 8px;
+    height: fit-content;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.company-con{
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    margin-left: 80px;
+    margin-top: 55px;
+    width: fit-content;
+    padding: 15px;
+    /* border: 1px black solid; */
+    transition: 00.3s;
+}
+
+.company-con:hover{
+    background-color: black;
+    color: white;
+}
+
+.company-con input[type=text]{
+    height: 20px;
+    width: 175px;
+    padding: 3px;
+    transition: 0.3s;
+}
+
+.company-con input[type=text]:focus{
+    height: 25px;
+    width: 180px;
+}
+
+input:focus::placeholder {
+  color: transparent;
+}
+
+.user-con{
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    /* border: 1px black solid; */
+    width: fit-content;
+    padding: 15px;
+    margin-left: 80px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.user-con:hover{
+    background-color: black;
+    color: white;
+}
+
+.user-con input{
+    height: 20px;
+    width: 220px;
+    padding: 3px;
+    transition: 0.3s;
+}
+
+.user-con input:focus{
+    height: 25px;
+    width: 225px;
+}
+
+.password-con{
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+    /* border: 1px black solid; */
+    width: fit-content;
+    padding: 15px;
+    margin-left: 80px;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.password-con:hover{
+    background-color: black;
+    color: white;
+}
+
+.password-con input{
+    height: 20px;
+    padding: 3px;
+    width: 175px;
+    transition: 0.3s;
+}
+
+.password-con input:focus{
+    width: 180px;
+    height: 25px;
+}
+
+.login-button{
+    /* border: 1px black solid; */
+    width: fit-content;
+    padding: 15px;
+    margin-top: 25px;
+    margin-left: 140px;
+}
+
+.login-button input{
+    font-family: 'Overpass', sans-serif;
+    font-size: 18px;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 3px;
+    width: 150px;
+    transition: 0.3s;
+}
+
+.login-button input:hover{
+    background-color: black;
+    color: white;
+}
+
+.signin-con{
+    font-family: 'Cabin', sans-serif;
+    font-size: 18px;
+    /* border: 1px black solid; */
+    width: fit-content;
+    margin-left: 165px;
+    margin-top: 10px;
+    padding: 5px;
+    transition: 00.3s;
+}
+
+.signin-con a{
+    font-family: 'Overpass', sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+    /* border: 1px black solid; */
+    padding: 3px;
+    /* border-radius: 10px; */
+    transition: 0.3s;
+    text-align: center;
+    cursor: pointer;
+}
+
+.signin-con:hover, .signin-con:hover a {
+    color: white;
+    background-color: black;
+}
