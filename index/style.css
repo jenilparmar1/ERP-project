@@ -59,7 +59,7 @@ body::-webkit-scrollbar{
 }
 
 .login-button a:hover{
-    background-color: black;
+    background-color: #270101;
     color: white;
     font-size: 19px;
 }
@@ -75,16 +75,16 @@ body::-webkit-scrollbar{
     width: fit-content;
     height: 35px;
     float: right;
-    margin-right: 5px;
-    padding: 5px;
     overflow: hidden;
     cursor: progress;
     transition: 0.3s;
     border-radius: 5px;
+    margin-left: 15px;
+    padding: 5px;
 }
 
 .timer:hover{
-    background-color: black;
+    background-color: #270101;
     color: white;
     font-size: 17px;
 }
@@ -100,21 +100,26 @@ body::-webkit-scrollbar{
     float: right;
     width: fit-content;
     display: grid;
+    /* border: 1px black solid; */
+    height: 81px;
+    margin-right: 5px;
 }
 
 .btn{
     font-family: 'Cabin', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     background-color: white;
     border: hidden;
     transition: 0.3s;
     border-radius: 5px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .btn:hover{
-    background-color: black;
+    background-color: #270101;
     color: white;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 .masters{
@@ -147,9 +152,9 @@ body::-webkit-scrollbar{
 }
 
 .master-con:hover #mas{
-    background-color: black;
+    background-color: #270101;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .transaction{
@@ -182,7 +187,7 @@ body::-webkit-scrollbar{
 }
 
 .transaction-con:hover #trans{
-    background-color: black;
+    background-color: #270101;
     color: white;
-    font-size: 18px;
+    font-size: 20px;
 }

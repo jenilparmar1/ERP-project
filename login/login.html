@@ -16,12 +16,14 @@
     <div class="container">
         <div class="logo"><p>LogIn <i class="fa-solid fa-user"></i></p></div>
         <form action="../index/index.html" method="get">
-        <div class="company-con"><label for="company">company: </label><input type="text" name="company" placeholder="company"></div>
-        <div class="user-con"><label for="user">user: </label><input type="text" name="user" placeholder="name"></div>
-        <div class="password-con"><label for="pass">password: </label><input type="password" name="pass" id="password" placeholder="password"></div>
+        <div class="company-con"><label for="company">Company: </label><select name="company" class="company-drop">
+            <option value="1">Company 1</option>
+            <option value="2">Company 2</option>
+        </select></div>
+        <div class="user-con"><label for="user">User: </label><input type="text" name="user" placeholder="name"></div>
+        <div class="password-con"><label for="pass">Password: </label><input type="password" name="pass" id="password" placeholder="password"></div>
         <div class="login-button"><input type="submit" value="LogIn"></div>
         </form>
-        <div class="signin-con"><p>Register: <a href="#" name="SignIn">SignIn</a></p></div>
     </div>
 </body>
 </html>

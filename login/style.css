@@ -8,8 +8,8 @@ body{
     border-radius: 10px;
     border: 1px black solid;
     width: 450px;
-    height: 650px;
-    margin-top: 170px;
+    height: 450px;
+    margin-top: 250px;
     margin-right: 45px;
     float: right;
 }
@@ -34,26 +34,23 @@ body{
     margin-top: 55px;
     width: fit-content;
     padding: 15px;
-    /* border: 1px black solid; */
+    border: 1px black solid;
     transition: 00.3s;
 }
 
 .company-con:hover{
-    background-color: black;
+    background-color: #270101;
     color: white;
 }
 
-.company-con input[type=text]{
-    height: 20px;
-    width: 175px;
-    padding: 3px;
+.company-drop{
+    font-family: 'Cabin', sans-serif;
+    width: 187px;
+    padding: 5px;
+    border: 1px grey solid; 
     transition: 0.3s;
 }
 
-.company-con input[type=text]:focus{
-    height: 25px;
-    width: 180px;
-}
 
 input:focus::placeholder {
   color: transparent;
@@ -62,7 +59,7 @@ input:focus::placeholder {
 .user-con{
     font-family: 'Cabin', sans-serif;
     font-size: 20px;
-    /* border: 1px black solid; */
+    border: 1px black solid;
     width: fit-content;
     padding: 15px;
     margin-left: 80px;
@@ -71,26 +68,27 @@ input:focus::placeholder {
 }
 
 .user-con:hover{
-    background-color: black;
+    background-color: #270101;
     color: white;
 }
 
 .user-con input{
     height: 20px;
-    width: 220px;
+    width: 178px;
+    margin-left: 45px; 
     padding: 3px;
     transition: 0.3s;
 }
 
 .user-con input:focus{
     height: 25px;
-    width: 225px;
+    width: 180px;
 }
 
 .password-con{
     font-family: 'Cabin', sans-serif;
     font-size: 20px;
-    /* border: 1px black solid; */
+    border: 1px black solid;
     width: fit-content;
     padding: 15px;
     margin-left: 80px;
@@ -99,19 +97,19 @@ input:focus::placeholder {
 }
 
 .password-con:hover{
-    background-color: black;
+    background-color: #270101;
     color: white;
 }
 
 .password-con input{
     height: 20px;
     padding: 3px;
-    width: 175px;
+    width: 184px;
     transition: 0.3s;
 }
 
 .password-con input:focus{
-    width: 180px;
+    width: 186px;
     height: 25px;
 }
 
@@ -135,35 +133,6 @@ input:focus::placeholder {
 }
 
 .login-button input:hover{
-    background-color: black;
+    background-color: #270101;
     color: white;
-}
-
-.signin-con{
-    font-family: 'Cabin', sans-serif;
-    font-size: 18px;
-    /* border: 1px black solid; */
-    width: fit-content;
-    margin-left: 165px;
-    margin-top: 10px;
-    padding: 5px;
-    transition: 00.3s;
-}
-
-.signin-con a{
-    font-family: 'Overpass', sans-serif;
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
-    /* border: 1px black solid; */
-    padding: 3px;
-    /* border-radius: 10px; */
-    transition: 0.3s;
-    text-align: center;
-    cursor: pointer;
-}
-
-.signin-con:hover, .signin-con:hover a {
-    color: white;
-    background-color: black;
 }
