@@ -7,7 +7,7 @@ body::-webkit-scrollbar{
 }
 
 .navbar-con{
-    height: 80px;
+    height: 100%;
     border-bottom: 1px black solid;
     position: sticky;
     top: 0;
@@ -15,13 +15,11 @@ body::-webkit-scrollbar{
     background-color: white;
 }
 
-.navbar{
+.hoverbar{
     overflow: hidden;
     height: fit-content;
     width: fit-content; 
     display: flex;
-    float: left;
-    padding-top: 55px;
 }
 
 
@@ -190,4 +188,16 @@ body::-webkit-scrollbar{
     background-color: #270101;
     color: white;
     font-size: 20px;
+}
+
+.logo-con{
+    /* border: black 1px solid; */
+    height: fit-content;
+    width: fit-content;
+    margin-left: 15px;
+}
+
+.logo-con img{
+    max-width: 1000px;
+    height: auto;
 }
