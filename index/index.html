@@ -32,6 +32,35 @@
                 document.getElementById("seconds").innerHTML = seconds;
             }
         }
+        window.addEventListener("DOMContentLoaded", function(){
+            let username = localStorage.getItem("user");
+            if (username) {
+                document.getElementById("welc-user").innerText = ("welcome, " + username);
+            }
+        })
+        let slideIndex = 1;
+            showSlides(slideIndex);
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("slide");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
     </script>
 </head>
 <body>
@@ -80,7 +109,37 @@
             </div>
         </div>
         <div class="main">
-            
+            <div class="dashboard">
+                <div class="dash-con">
+                    <h1 id="welc-user"></h1>
+                    <div class="slider">
+                        <div class="slide fade">
+                            <img src="../images/Gallery of Office K2 _ Baraban +  - 17.jpg" alt="image">
+                            <div class="caption">sample</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/Netlog Logistics Offices - Istanbul _ Office Snapshots.jpg" alt="image">
+                            <div class="caption">sample</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/desk_office_chair_design_meeting_80711_1920x1080.jpg" alt="image">
+                            <div class="caption">sample</div>
+                        </div>
+                        <div class="slide fade">
+                            <img src="../images/Slate Magazine Offices - New York City _ Office Snapshots.png" alt="image">
+                            <div class="caption">sample</div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 </body>
