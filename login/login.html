@@ -15,18 +15,6 @@
         function validateForm() {
             let user = document.getElementById("User");
             let pass = document.getElementById("password");
-
-            if (user.value == "") {
-                document.getElementById("req1").innerHTML = "*Username required";
-                user.focus();
-                return false;
-            }
-            if (pass.value == "") {
-                document.getElementById("req2").innerHTML = "*Password required";
-                pass.focus();
-                return false
-            }
-
             localStorage.setItem("user", user.value);
             window.location.replace("http://127.0.0.1:5500/index/index.html");
         }
@@ -40,8 +28,8 @@
             <option value="1">Company 1</option>
             <option value="2">Company 2</option>
         </select></div>
-        <div class="user-con"><label for="user">User: </label><input type="text" name="user" placeholder="name" id="User"><p class="req1"></p></div>
-        <div class="password-con"><label for="pass">Password: </label><input type="password" name="pass" id="password" placeholder="password"><p class="req2"></p></div>
+        <div class="user-con"><label for="user">User: </label><input type="text" name="user" placeholder="name" id="User"></div>
+        <div class="password-con"><label for="pass">Password: </label><input type="password" name="pass" id="password" placeholder="password"></div>
         <div class="login-button"><input type="button" onclick="validateForm()" value="LogIn"></div>
         </form>
     </div>

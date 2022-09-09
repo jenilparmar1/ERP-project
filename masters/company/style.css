@@ -1,24 +1,3 @@
-
-/* .navbar a{
-    font-family: 'Cabin', sans-serif;
-    float: right;
-    text-decoration: none;
-    float: left;
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 45px;
-    color:black;
-    transition: 0.3s;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
-.navbar a:hover{
-    background-color: black;
-    color: white;
-    font-size: 19px;
-} */
 body{
     margin: 0;
 }
@@ -29,7 +8,7 @@ body::-webkit-scrollbar{
 
 .navbar-con{
     height: 100%;
-    /* border-bottom: 1px black solid; */
+    /* border: 1px black solid; */
     position: sticky;
     top: 0;
     width: 100%;
@@ -37,6 +16,7 @@ body::-webkit-scrollbar{
 }
 
 .hoverbar{
+    /* border: 1px black solid; */
     overflow: hidden;
     height: fit-content;
     width: fit-content; 
@@ -62,42 +42,12 @@ body::-webkit-scrollbar{
     font-size: 19px;
 }
 
-.timer{
-    font-family: 'Cabin', sans-serif;
-    float: right;
-    font-size: 16px;
-    width: fit-content;
-    height: 35px;
-    float: right;
-    overflow: hidden;
-    cursor: progress;
-    transition: 0.3s;
-    border-radius: 5px;
-    margin-left: 15px;
-    padding: 5px;
-}
-
-.timer:hover{
-    background-color: #270101;
-    color: white;
-    font-size: 17px;
-}
-
 .login-button{
     /* border: 1px black solid; */
-    margin-top: 35px;
+    margin-top: 57px;
     width: fit-content;
     float: right;
-    margin-left: 45px;
-}
-
-.login-time{
-    float: right;
-    width: fit-content;
-    display: grid;
-    /* border: 1px black solid; */
-    height: 81px;
-    margin-right: 5px;
+    margin-left: 45x;
 }
 
 .btn{
@@ -199,15 +149,4 @@ body::-webkit-scrollbar{
 .logo-con img{
     max-width: 1000px;
     height: auto;
-}
-
-.dashboard{
-    border: 2px black solid;
-}
-
-#welc-user{
-    /* border: 1px black solid; */
-    height: fit-content;
-    width: fit-content;
-    margin-left: 50px;
 }
