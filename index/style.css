@@ -210,4 +210,74 @@ body::-webkit-scrollbar{
     height: fit-content;
     width: fit-content;
     margin-left: 50px;
+    font-family: 'Cabin', sans-serif;
+}
+
+.card-con{
+    font-family: 'Cabin', sans-serif;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 245px;
+    margin-bottom: 15px;
+    align-items: center;#
+    border: 1px black solid;
+    display: flex;
+}
+
+.card-con h3{
+    border: 3px #EE00FF;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+#ser{
+    margin-left: 400px;
+}
+
+#fin{
+    margin-left: 400px;
+}
+
+.card-con h3:hover{
+    background-color: #f675ff;
+    font-size: 25px;
+}
+
+.dash{
+    font-family: 'Cabin', sans-serif;
+    border: 1px black solid;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#company{
+    margin-left: 810px;
+    font-size: 45px;
+}
+
+.info{
+border-top: 1px black solid;
+    display: flex;
+}
+
+.info h3{
+    margin-left: 250px;
+    font-size: 30px;
+}
+
+#user{
+    margin-left: 150px;
+}
+
+.office{
+    max-width: 34%;
+    height: 450px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }

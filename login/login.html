@@ -15,7 +15,9 @@
         function validateForm() {
             let user = document.getElementById("User");
             let pass = document.getElementById("password");
+            let company = document.getElementById("company");
             localStorage.setItem("user", user.value);
+            localStorage.setItem("company", company.value);
             window.location.replace("http://127.0.0.1:5500/index/index.html");
         }
     </script>
@@ -24,9 +26,9 @@
     <div class="container">
         <div class="logo"><p>LogIn <i class="fa-solid fa-user"></i></p></div>
         <form action="../index/index.html" method="post" name="loginForm">
-        <div class="company-con"><label for="company">Company: </label><select name="company" class="company-drop">
-            <option value="1">Company 1</option>
-            <option value="2">Company 2</option>
+        <div class="company-con"><label for="company">Company: </label><select name="company" id="company" class="company-drop">
+            <option value="company 1">Company 1</option>
+            <option value="company 2">Company 2</option>
         </select></div>
         <div class="user-con"><label for="user">User: </label><input type="text" name="user" placeholder="name" id="User"></div>
         <div class="password-con"><label for="pass">Password: </label><input type="password" name="pass" id="password" placeholder="password"></div>

@@ -12,8 +12,9 @@
         @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
     </style>
 
-    <script>
-        window.onload = function(){
+    <script src="../main.js"></script>
+    <script>        
+        window.onload = function () {
             var seconds = 00;
             var minute = 00;
             var hour = 00;
@@ -31,17 +32,19 @@
                 document.getElementById("minute").innerHTML = minute;
                 document.getElementById("seconds").innerHTML = seconds;
             }
-        }
-        window.addEventListener("DOMContentLoaded", function(){
+        };
+        window.addEventListener("DOMContentLoaded", function () {
             let username = localStorage.getItem("user");
             if (username) {
-                document.getElementById("welc-user").innerText = ("welcome, " + username);
+                document.getElementById("welc-user").innerText = "Welcome, " + username;
+                document.getElementById("user").innerText= "User: " + username;
             }
-        })
-        function Dashboard(){
-            window.location.replace("http://127.0.0.1:5500/index/index.html")
-        }
-    </script>
+            let company = localStorage.getItem("company");
+            if(company){
+                document.getElementById("company").innerText = company;
+            }
+        });
+        </script>
 </head>
 <body>
     <header>
@@ -66,9 +69,6 @@
                     <div class="masters">
                         <a href="/masters/company/comapny.html">Add Company</a>
                         <a href="#">Add Services</a>
-                        <a href="#">Add Client</a>
-                        <a href="#">Add Users</a>
-                        <a href="#">Add User Rights</a>
                         <a href="#">Add Fin Year</a>
                     </div>
                 </div>
@@ -84,7 +84,7 @@
                     <button class="btn">Report <i class="fa-solid fa-caret-down fa-sm"></i></button>
                 </div>
                 <div class="dash-con">
-                    <button class="btn" onclick="Dashboard()">Dashboard <i class="fa-solid fa-caret-down fa-sm"></i></button>
+                    <button class="btn" onclick="dashBoard()">Dashboard <i class="fa-solid fa-caret-down fa-sm"></i></button>
                 </div>
             </div>
         </div>
@@ -92,7 +92,25 @@
             <div class="dashboard">
                 <div class="dash-con">
                     <h1 id="welc-user"></h1>
-                    
+                    <div class="card-con">
+                        <h3>Add company <i class="fa-solid fa-circle-plus fa-sm "></i></h3>
+                        <h3 id="ser">Add services <i class="fa-solid fa-circle-plus fa-sm "></i></h3>
+                        <h3 id="fin">Financial year <i class="fa-solid fa-circle-plus fa-sm "></i></h3>
+                    </div>
+                    <div class="dash">
+                        <h1 id="company"></h1>
+                        <div class="info">
+                            <h3 id="user"></h3>
+                            <h3>Role: Engineer</h3>
+                            <h3>Supervisor: Jhon</h3>
+                            <h3>Current task: Maintainance</h3>
+                        </div>
+                    </div>
+                    <div class="images">
+                        <img src="/images/glass office.jpg" alt="office image" class="office">
+                        <img src="/images/wide office.jpg" alt="office image" class="office">
+                        <img src="/images/laptop.jpg" alt="office image" class="office">
+                    </div>
                 </div>
             </div>
         </div>

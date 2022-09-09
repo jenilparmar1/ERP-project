@@ -11,6 +11,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&family=Overpass:wght@700&family=PT+Sans:wght@700&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
     </style>
+    <script src="/main.js"></script>
 </head>
 <body>
     <div class="navbar-con">
@@ -31,9 +32,6 @@
                 <div class="masters">
                     <a href="/masters/company/comapny.html">Add Company</a>
                     <a href="#">Add Services</a>
-                    <a href="#">Add Client</a>
-                    <a href="#">Add Users</a>
-                    <a href="#">Add User Rights</a>
                     <a href="#">Add Fin Year</a>
                 </div>
             </div>
@@ -50,13 +48,35 @@
                 <button class="btn">Report <i class="fa-solid fa-caret-down fa-sm"></i></button>
             </div>
             <div class="dash-con">
-                <button class="btn" >Dashboard <i class="fa-solid fa-caret-down fa-sm"></i></button>
+                <button class="btn" onclick="dashBoard()">Dashboard <i class="fa-solid fa-caret-down fa-sm"></i></button>
             </div>
         </div>
     </div>
 
     <div class="main">
-        
+        <h3>Add company <i class="fa-solid fa-circle-plus fa-sm "></i></h3>
+        <div class="form">
+            <form action="/index/index.html" method="post" name="company-form">
+                <div class="comp-con">
+                    <label for="company-name">Company name:</label>
+                    <input type="text" name="company-name" id="comp">
+                </div>
+                <div class="emp-con">
+                    <label for="emp">Employer: </label>
+                    <input type="text" name="emp" id="emp">
+                </div>
+                <div class="num-con">
+                    <label for="num">Number of Employee: </label>
+                    <select name="num" id="num">
+                        <option value="10">10</option>
+                        <option value="15">15</option>
+                        <option value="20">20</option>
+                        <option value="25">25</option>
+                        <option value="30">30</option>
+                    </select>
+                </div>
+            </form>
+        </div>
     </div>
 </body>
 </html>

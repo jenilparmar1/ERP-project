@@ -150,3 +150,28 @@ body::-webkit-scrollbar{
     max-width: 1000px;
     height: auto;
 }
+
+.main{
+    font-family: 'Cabin', sans-serif;
+    height: fit-content;
+    align-items: center;
+    border: 1px black solid;
+    display: flex;
+}
+
+.main h3{
+    border: 3px #EE00FF;
+    border-style: groove;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+.main h3:hover{
+    background-color: #f675ff;
+    font-size: 22px;
+}
