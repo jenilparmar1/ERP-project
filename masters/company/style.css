@@ -159,7 +159,7 @@ body::-webkit-scrollbar{
     display: flex;
 }
 
-.main h3{
+.show{
     border: 3px #EE00FF;
     border-style: groove;
     border-radius: 5px;
@@ -171,7 +171,12 @@ body::-webkit-scrollbar{
     transition: 0.5s;
 }
 
-.main h3:hover{
+.show:hover{
     background-color: #f675ff;
     font-size: 22px;
+}
+
+form{
+    border: 1px black solid;
+    display: none;
 }

@@ -12,6 +12,20 @@
         @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
     </style>
     <script src="/main.js"></script>
+    <script>
+        function ShowForm() {
+                const form = document.getElementById("form");
+                if (form.style.display === 'hidden') {
+                    form.style.display = 'visible'
+                }
+        }
+        function HideForm() {
+            const form = document.getElementById("form");
+            if (form.style.display === 'visible') {
+                form.style.display = 'hidden'
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="navbar-con">
@@ -54,9 +68,9 @@
     </div>
 
     <div class="main">
-        <h3>Add company <i class="fa-solid fa-circle-plus fa-sm "></i></h3>
+        <button onclick="ShowForm()" class="show">Add company <i class="fa-solid fa-circle-plus fa-sm "></i></button>
         <div class="form">
-            <form action="/index/index.html" method="post" name="company-form">
+            <form action="/index/index.html" method="post" name="company-form" id="form">
                 <div class="comp-con">
                     <label for="company-name">Company name:</label>
                     <input type="text" name="company-name" id="comp">
@@ -75,6 +89,7 @@
                         <option value="30">30</option>
                     </select>
                 </div>
+                    <button onclick="HideForm()" class="submit-btn">Submit</button>
             </form>
         </div>
     </div>
