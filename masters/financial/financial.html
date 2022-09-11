@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>financial year</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8ec221d113.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Overpass+Mono:wght@600&family=Overpass:wght@700&family=PT+Sans:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@600&display=swap');
+    </style>
+    <script src="/main.js"></script>
+    <script>
+        function ShowForm() {
+                const form = document.getElementById("form");
+                if (form.style.display === "none") {
+                    form.style.display = "block";
+                }
+                else {
+                    form.style.display = "none";
+                }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="navbar-con">
+        <div class="login-con">
+            <div class="login-button">
+                <a href="/login/login.html">Logout <i
+                        class="fa-solid fa-right-to-bracket fa-sm"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="logo-con">
+        <img src="/images/logo_iipl.gif" alt="logo">
+    </div>
+    <div class="hoverbar">
+        <div class="master-con">
+            <button class="btn" id="mas">Masters <i
+                    class="fa-solid fa-caret-down fa-sm"></i></button>
+            <div class="masters">
+                <a href="/masters/company/comapny.html">Add Company</a>
+                <a href="#">Add Services</a>
+                <a href="#">Add Fin Year</a>
+            </div>
+        </div>
+        <div class="transaction-con">
+            <button class="btn" id="trans">Transaction <i
+                    class="fa-solid fa-caret-down fa-sm"></i></button>
+            <div class="transaction">
+                <a href="#">Budget</a>
+                <a href="#">Map Services</a>
+                <a href="#">Billing</a>
+            </div>
+        </div>
+        <div class="report-con">
+            <button class="btn">Report <i class="fa-solid fa-caret-down fa-sm"></i></button>
+        </div>
+        <div class="dash-con">
+            <button class="btn" onclick="dashBoard()">Dashboard <i
+                    class="fa-solid fa-caret-down fa-sm"></i></button>
+        </div>
+    </div>
+    </div>
+
+    <div class="main">
+        <button class="show" onclick="ShowForm()">Add financial year <i
+                class="fa-solid fa-circle-plus fa-sm "></i></button>
+        <div class="form" id="form">
+            <form action="/index/index.html" method="post" name="company-form">
+                <div class="comp-con">
+                    <label for="company-name">Company:</label>
+                    <input type="text" name="company-name" id="comp">
+                </div>
+                <div class="year-con">
+                    <label for="finan-year">Year: </label>
+                    <input type="text" name="finan-year" id="year">
+                </div>
+                <div class="sub">
+                    <button class="submit-btn">Add financial year</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

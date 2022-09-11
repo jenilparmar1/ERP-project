@@ -1,24 +1,3 @@
-
-/* .navbar a{
-    font-family: 'Cabin', sans-serif;
-    float: right;
-    text-decoration: none;
-    float: left;
-    text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-top: 45px;
-    color:black;
-    transition: 0.3s;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
-.navbar a:hover{
-    background-color: black;
-    color: white;
-    font-size: 19px;
-} */
 body{
     margin: 0;
 }
@@ -29,7 +8,7 @@ body::-webkit-scrollbar{
 
 .navbar-con{
     height: 100%;
-    /* border-bottom: 1px black solid; */
+    /* border: 1px black solid; */
     position: sticky;
     top: 0;
     width: 100%;
@@ -37,6 +16,7 @@ body::-webkit-scrollbar{
 }
 
 .hoverbar{
+    /* border: 1px black solid; */
     overflow: hidden;
     height: fit-content;
     width: fit-content; 
@@ -62,42 +42,12 @@ body::-webkit-scrollbar{
     font-size: 19px;
 }
 
-.timer{
-    font-family: 'Cabin', sans-serif;
-    float: right;
-    font-size: 16px;
-    width: fit-content;
-    height: 35px;
-    float: right;
-    overflow: hidden;
-    cursor: progress;
-    transition: 0.3s;
-    border-radius: 5px;
-    margin-left: 15px;
-    padding: 5px;
-}
-
-.timer:hover{
-    background-color: #270101;
-    color: white;
-    font-size: 17px;
-}
-
 .login-button{
     /* border: 1px black solid; */
-    margin-top: 35px;
+    margin-top: 57px;
     width: fit-content;
     float: right;
-    margin-left: 45px;
-}
-
-.login-time{
-    float: right;
-    width: fit-content;
-    display: grid;
-    /* border: 1px black solid; */
-    height: 81px;
-    margin-right: 5px;
+    margin-left: 45x;
 }
 
 .btn{
@@ -201,30 +151,15 @@ body::-webkit-scrollbar{
     height: auto;
 }
 
-.dashboard{
-    border: 2px black solid;
-}
-
-#welc-user{
-    /* border: 1px black solid; */
-    height: fit-content;
-    width: fit-content;
-    margin-left: 50px;
+.main{
     font-family: 'Cabin', sans-serif;
-}
-
-.card-con{
-    font-family: 'Cabin', sans-serif;
-    width: fit-content;
     height: fit-content;
-    margin-left: 245px;
-    margin-bottom: 15px;
-    align-items: center;#
+    align-items: center;
     border: 1px black solid;
-    display: flex;
+    display: grid;
 }
 
-.card-con button{
+.show{
     border: 3px #EE00FF;
     border-style: groove;
     border-radius: 5px;
@@ -234,50 +169,83 @@ body::-webkit-scrollbar{
     height: fit-content;
     margin-left: 15px;
     transition: 0.5s;
+    margin-top: 5px;
 }
 
-#ser{
-    margin-left: 400px;
-}
-
-#fin{
-    margin-left: 400px;
-}
-
-.card-con button:hover{
+.show:hover{
     background-color: #f675ff;
-    font-size: 25px;
+    font-size: 22px;
 }
 
-.dash{
-    font-family: 'Cabin', sans-serif;
+.form{
     border: 1px black solid;
+    display: none;
+    margin-left: 35px;
+    margin-right: 35px;
+    width: auto;
+        font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+}
+
+.comp-con{
+    /* border: 1px solid black; */
+    margin: 2px;
+    padding: 15px;
+}
+
+.comp-con input{
+    height: 20px;
+    width: 190px;
+    padding: 3px;
+    transition: 00.3s;
     border-radius: 5px;
-    margin: 5px;
 }
 
-#company{
-    margin-left: 810px;
-    font-size: 45px;
+.comp-con input:focus{
+    height: 25px;
+    width: 195px;
 }
 
-.info{
-border-top: 1px black solid;
-    display: flex;
+
+.sub{
+    /* border: 1px solid black; */
+    margin: 2px;
+    padding: 15px;
 }
 
-.info h3{
-    margin-left: 250px;
-    font-size: 30px;
+.submit-btn{
+    margin: 2px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 18px;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 3px;
+    width: 215px;
+    transition: 0.3s;
+    height: 30px;
 }
 
-#user{
-    margin-left: 150px;
+.submit-btn:hover{
+    width: 225px;
+    height: 35px;
 }
 
-.office{
-    max-width: 34%;
-    height: 450px;
-    margin-top: 25px;
-    margin-bottom: 25px;
+.year-con{
+    margin: 2px;
+    padding: 15px;
+}
+
+.year-con input{
+    height: 20px;
+    width: 190px;
+    padding: 3px;
+    transition: 00.3s;
+    border-radius: 5px;
+    margin-left: 45px;
+}
+
+.year-con input:focus{
+    height: 25px;
+    width: 195px;
 }
