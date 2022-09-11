@@ -156,7 +156,7 @@ body::-webkit-scrollbar{
     height: fit-content;
     align-items: center;
     border: 1px black solid;
-    display: flex;
+    display: grid;
 }
 
 .show{
@@ -169,6 +169,7 @@ body::-webkit-scrollbar{
     height: fit-content;
     margin-left: 15px;
     transition: 0.5s;
+    margin-top: 5px;
 }
 
 .show:hover{
@@ -176,7 +177,95 @@ body::-webkit-scrollbar{
     font-size: 22px;
 }
 
-form{
+.form{
     border: 1px black solid;
     display: none;
+    margin-left: 35px;
+    margin-right: 35px;
+    width: auto;
+    font-family: 'Cabin', sans-serif;
+    font-size: 20px;
+}
+
+.comp-con{
+    /* border: 1px solid black; */
+    margin: 2px;
+    padding: 15px;
+}
+
+.comp-con input{
+    height: 20px;
+    width: 190px;
+    padding: 3px;
+    transition: 00.3s;
+    border-radius: 5px;
+}
+
+.comp-con input:focus{
+    height: 25px;
+    width: 195px;
+}
+
+.emp-con{
+    /* border: 1px solid black; */
+    margin: 2px;
+    padding: 15px;
+}
+
+.emp-con input{
+    height: 20px;
+    width: 190px;
+    padding: 3px;
+    transition: 00.3s;
+    margin-left: 52px;
+    border-radius: 5px;
+}
+
+.emp-con input:focus{
+    height: 25px;
+    width: 195px;
+}
+
+.num-con{
+    /* border: 1px solid black; */
+    margin: 2px;
+    padding: 15px;
+}
+
+.num{
+    width: 47.5px;
+    height: 27px;
+    padding: 5px;
+    border: 1px black solid;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.num:focus{
+    width: 52px;
+    height: 32px;
+}
+
+.sub{
+    /* border: 1px solid black; */
+    margin: 2px;
+    padding: 15px;
+}
+
+.submit-btn{
+    margin: 2px;
+    font-family: 'Overpass', sans-serif;
+    font-size: 18px;
+    background-color: white;
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 3px;
+    width: 150px;
+    transition: 0.3s;
+    height: 30px;
+}
+
+.submit-btn:hover{
+    width: 155px;
+    height: 35px;
 }

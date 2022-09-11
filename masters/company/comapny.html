@@ -15,15 +15,12 @@
     <script>
         function ShowForm() {
                 const form = document.getElementById("form");
-                if (form.style.display === 'hidden') {
-                    form.style.display = 'visible'
+                if (form.style.display === "none") {
+                    form.style.display = "block";
                 }
-        }
-        function HideForm() {
-            const form = document.getElementById("form");
-            if (form.style.display === 'visible') {
-                form.style.display = 'hidden'
-            }
+                else {
+                    form.style.display = "none";
+                }
         }
     </script>
 </head>
@@ -68,9 +65,9 @@
     </div>
 
     <div class="main">
-        <button onclick="ShowForm()" class="show">Add company <i class="fa-solid fa-circle-plus fa-sm "></i></button>
-        <div class="form">
-            <form action="/index/index.html" method="post" name="company-form" id="form">
+        <button class="show" onclick="ShowForm()">Add company <i class="fa-solid fa-circle-plus fa-sm "></i></button>
+        <div class="form" id="form">
+            <form action="/index/index.html" method="post" name="company-form">
                 <div class="comp-con">
                     <label for="company-name">Company name:</label>
                     <input type="text" name="company-name" id="comp">
@@ -81,7 +78,7 @@
                 </div>
                 <div class="num-con">
                     <label for="num">Number of Employee: </label>
-                    <select name="num" id="num">
+                    <select name="num" id="num" class="num">
                         <option value="10">10</option>
                         <option value="15">15</option>
                         <option value="20">20</option>
@@ -89,7 +86,9 @@
                         <option value="30">30</option>
                     </select>
                 </div>
-                    <button onclick="HideForm()" class="submit-btn">Submit</button>
+                <div class="sub">
+                    <button onclick="dashBoard()" class="submit-btn">Submit</button>
+                </div>
             </form>
         </div>
     </div>
